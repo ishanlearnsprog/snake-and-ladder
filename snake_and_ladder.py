@@ -168,8 +168,7 @@ class SnakeAndLadderGame():
 
                 pos = p.pos + move
                 if pos > 99:
-                    print(pos) 
-                    print("\nThe player can not move \nRoll a {} to win".format(100 - p.pos))
+                    print("\nThe player can not move \nRoll a {} to win".format(99 - p.pos))
                     self.gameStatus()
                     continue
                 print("\nThe player moves to position {}".format(pos+1))
